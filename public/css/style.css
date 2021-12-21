@@ -1,0 +1,580 @@
+
+/* https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_theme_deep-purple */ 
+/* COULEURS VIOLETTES */
+
+/*  background: linear-gradient(#591DA9, #051960);*/
+
+* {
+    box-sizing: border-box;
+  margin : 0;
+  }
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat';
+  /*background: linear-gradient(#591DA9, #051960);
+  background-repeat: no-repeat;
+  height: 100vh;*/
+}
+
+header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #4D3871;
+  }
+
+h2  {
+  font-weight:  bold;
+  font-size: 120%;
+  padding-left: 20px;
+}
+
+.li-item {
+    display: inline-block;
+    align-items: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition-duration: 400ms;
+}
+
+.navbar img {
+  height: 80px;
+}
+
+.navbar .logo-nav {
+  display: flex;
+}
+
+.navbar-ul {
+  display :flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar a:hover {
+    border-radius: 6px;
+    background-color: #6A4F9C;
+
+}
+
+.rightside-nav {
+    float: right;
+  }
+
+.btn-acc {
+  visibility: hidden;
+}
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: flex;
+      text-align: left;
+    }
+    .rightside-nav {
+      float: none;
+    }
+  }
+
+
+  /* LA LISTE DES SERIES */
+
+
+  .grid-series {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);    
+  }
+
+  .infos-series {
+    border-radius: 20px;
+    margin: 8%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#591DA9, #051960);
+    transition: box-shadow .3s;
+  }
+
+  .infos-series:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,.2); 
+  }
+
+  .img-series {
+      border: solid 5px white;
+      border-radius: 10px;
+    transition-duration: 400ms;
+  }
+
+.img-series:hover {
+    opacity: 50%;
+}
+
+  .page-title {
+      font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 130%;
+  }
+
+  /* CSS ACCEUIL Océane */
+
+  section.accueil {
+   color: white;
+   position: relative;
+   background-color: #051937;
+
+  }
+
+  .haut-de-page h1{
+    padding: 80px;
+    padding-right: 10px ;
+    font-size: 180px;
+    /* position: absolute;
+    right: 10%;
+    font-weight: normal; */
+}
+
+.accueil .haut-de-page h1::before{
+    content: "";
+     position: absolute;
+     top: 10%;
+     height: 5px;
+     width: 350px;
+     background: linear-gradient(#591DA9, #051960);
+     left: 70;
+
+}
+
+.haut-de-page .titles-acc p{
+    padding-left: 70px ;
+    margin: 20px;
+    font-size: 30px;
+    line-height: 60px;
+    padding-bottom: 6%;
+    /* font-size: 10px;
+    position: absolute;
+    right: 10%; */
+} 
+
+.haut-de-page .titles-acc span{
+    font-weight: bold;
+    color: #591DA9;
+}
+
+.haut-de-page .titles-acc i{
+    color: #591DA9;
+    font-size: 40px;
+}
+
+.haut-de-page .titles a{
+    text-decoration: none;
+    background: linear-gradient(#591DA9, #051960) ;
+    color: #f1f1f1;
+    padding: 20px ;
+    border-radius: 30px;
+}
+
+.btn-acc{
+ padding: 80px;
+}
+
+.haut-de-page .logo-acceuil img{
+    height: 90%;
+    /* position: absolute;
+    bottom: 0;
+    LEFT: 10px; */
+    /* padding-left: 15%; */
+}
+
+section.series {
+  background-color: white;
+}
+
+/* les séries du moment */
+
+.series ul {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+.series ul img{
+  padding: 20px;
+  justify-content: center;
+}
+
+.series img:hover {
+  color: thistle;
+  opacity: 0.5;
+}
+
+
+
+.series h1{
+  color: white;
+  background-color: #051960 ;
+  width: 800px;
+  padding: 15px;
+  margin: 20px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titles-ct {
+  display: flex;
+  justify-content: center;
+}
+
+/* CONNEXION / INSCRIPTION CSS */
+
+.container {
+  background-color: #051937;
+}
+
+
+.formulaire-connexion {
+  background-color: #051937;
+  display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-co{
+  background-color: aliceblue;
+  width: 200%;
+  max-width: 500px;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.titles {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: 5%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+
+
+.form-co {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.form-co .input-box {
+  width: calc(100% /2 - 20px);
+  margin-bottom:  15px;
+  align-items: center;
+  text-align: center;
+}
+
+  .form-co .input-box .details input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #591DA9;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-inscri .input-box input:focus,
+.form-inscri .input-box input:valid{
+    border-color: #591DA9;
+}
+
+.submit-inscription {
+  height: 100%;
+    width: 100%;
+    outline: none;
+    color: #591DA9;
+}
+
+.form-co .form-check {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.submit-inscription button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #591DA9;
+  height: 50px;
+  border: none;
+  background: linear-gradient(#591DA9, #051960);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* inscription */
+
+.formulaire-inscription {
+    background-color: #051937;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-inscri {
+    background-color: aliceblue;
+    width: 200%;
+    max-width: 500px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border-radius: 5px;  
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inscri .input-box {
+  width: calc(100% /2 - 20px);
+  margin-bottom:  15px;
+}
+
+.form-inscri .input-box  .details{
+  display: block;
+}
+
+.form-inscri button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #591DA9;
+  height: 50px;
+  border: none;
+  background: linear-gradient(#591DA9, #051960);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.submit-inscription button:hover {
+  background: linear-gradient( -135deg, #591DA9, #051960);
+}
+
+.submit-inscription {
+  padding-top: 20px;
+}
+
+.form-inscri .details {
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* PAGE SERIE */
+
+  .grid-episodes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); 
+  }
+
+  .infos-serie {
+    /*flex-wrap: wrap; selon la taille de l'écran*/
+    border-radius: 20px;
+    align-items: center;
+    margin: 0 20%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#591DA9, #051960);
+    transition: box-shadow .3s;
+    display:flex;
+  }
+
+  .infos-serie:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,.2); 
+  }
+
+.infos-stats  {
+  padding: 5% 5%;
+}
+
+.infos-stats img {
+  border: solid 5px white;
+  border-radius: 10px;
+}
+
+
+  .infos-resume {
+    padding: 5% 5%;
+  }
+
+  .img-episodes {
+    border-radius:  10px;
+  }
+
+  .avis-serie {
+    border-radius: 20px;
+    align-items: center;
+    margin: 0 40%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#591DA9, #051960);
+    transition: box-shadow .3s;
+    display:flex;
+  }
+
+  .affichage-saison {
+  
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* liens du menu  dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+/*.dropdown:hover .dropbtn {
+  opacity: 30%;
+}*/
+
+  .btn-dropdown {
+    background: linear-gradient(#591DA9, #051960);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+
+  .episodes-list {
+    display:flex;
+    background: linear-gradient(#591DA9, #051960);
+    color: white;
+      margin: 4px, 4px;
+      padding: 4px;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+
+    .btn-genre {
+      background: linear-gradient(#591DA9, #051960);
+      text-decoration: none;
+      color: white;
+      padding:  5px  10px;
+      border-radius: 10px;
+      align-items: center;
+      margin: 0 10px;
+    }
+
+    .list-btn {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-genre:hover {
+      opacity: 70%;
+    }
+
+     /*PROFIL css */
+
+  section .profil {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profil .container .infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+ .profil .infos {
+       background-color: tomato;
+       border-radius: 5px;
+       padding-top: 30px;
+       position: relative;
+       width: 350px;
+       max-width: 100%;
+       text-align: center;
+     }  
+
+
+  
